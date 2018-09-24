@@ -25,30 +25,13 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="124dp"
             android:ems="10"
-            android:hint="username"
+            android:hint="@string/msn_id"
             android:inputType="textPersonName"
             app:textChangedListener="@{loginVm.getUsernameTextWatcher}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.503"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-        <EditText
-            android:id="@+id/editText2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:hint="password"
-            app:textChangedListener="@{loginVm.passwordTextWatcher}"
-            android:inputType="textPassword"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText" />
 
         <Button
             android:id="@+id/button2"
@@ -58,13 +41,13 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="40dp"
-            android:text="Login"
+            android:layout_marginTop="16dp"
             android:onClick="@{() -> loginVm.attemptLogin()}"
+            android:text="Login"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.275"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText2" />
+            app:layout_constraintTop_toBottomOf="@+id/editText" />
     </android.support.constraint.ConstraintLayout>
 
 </layout>

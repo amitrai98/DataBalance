@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">DataBalance</string>
+    <string name="hello">Hello</string>
+    <string name="your_data_balance_is">Your Data Balance is</string>
+    <string name="your_plan_validity_is">your plan validity is</string>
+    <string name="msn_id">msn id</string>
+    <string name="welcome">Welcome</string>
+
 </resources>
